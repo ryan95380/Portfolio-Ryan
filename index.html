@@ -1,14 +1,96 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Ryan</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
 
-  <script src="script.js"></script>  
+  <!-- ===== Navigation ===== -->
+  <header>
+    <nav>
+      <h1>RM</h1>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button>☰</button>
+    </nav>
+  </header>
+
+  <!-- ===== Section accueil ===== -->
+  <section id="accueil">
+    <h2>Développeur Web</h2>
+    <p>Esprit Rock Lee : travail et persévérance.</p>
+    <a href="#projets">Voir mes projets</a>
+  </section>
+
+  <!-- ===== Section à propos ===== -->
+  <section id="apropos">
+    <img src="img/ryan.jpg" alt="Portrait de Ryan, développeur web">
+    <h2>À propos</h2>
+    <p>Moi c'est Ryan. Je me forme au développement web. J'aime coder des sites Web.</p>
+  </section>
+
+  <!-- ===== Section projets ===== -->
+  <section id="projets">
+    <h2>Projets</h2>
+
+    <article>
+      <img src="img/Hokage.webp" alt="Capture d'écran du projet 1">
+      <h3>Projet 1</h3>
+      <a href="#">Voir le code sur GitHub</a>
+    </article>
+
+    <article>
+      <img src="img/Hokage.webp" alt="Capture d'écran du projet 2">
+      <h3>Projet 2</h3>
+      <a href="#">Voir le code sur GitHub</a>
+    </article>
+
+    <article>
+      <img src="img/Hokage.webp" alt="Capture d'écran du projet 3">
+      <h3>Projet 3</h3>
+      <a href="#">Voir le code sur GitHub</a>
+    </article>
+  </section>
+
+  <!-- ===== Section compétences ===== -->
+  <section id="competences">
+    <h2>Compétences</h2>
+    <ul>
+      <li><img src="img/js.gif" alt="Logo JavaScript"> JavaScript</li>
+      <li><img src="img/html.png" alt="Logo HTML5"> HTML</li>
+      <li><img src="img/css.png" alt="Logo CSS3"> CSS</li>
+      <li><img src="img/php.png" alt="Logo PHP"> PHP</li>
+    </ul>
+    <p>Télécharger mon CV</p>
+    <a href="#" download>Télécharger</a>
+  </section>
+
+  <!-- ===== Section contact ===== -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" name="nom" placeholder="Nom" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="sujet" placeholder="Sujet">
+      <input type="text" name="telephone" placeholder="Téléphone">
+      <textarea name="message" placeholder="Votre message..." rows="5"></textarea>
+
+      <!-- Bouton d’envoi -->
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+  
+  <footer>
+    <p>© 2025 Ryan Mambou</p>
+  </footer>
+ <script src="script.js"></script>
 </body>
 </html>
