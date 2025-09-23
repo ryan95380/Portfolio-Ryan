@@ -2,101 +2,92 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio Ryan</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ===== Navigation ===== -->
   <header>
+    <div class="logo">RM</div>
     <nav>
-      <h1>RM</h1>
-      <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#apropos">À propos</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button>☰</button>
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#projets">Projets</a>
+      <a href="#competences">Compétences</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- ===== Section accueil ===== -->
-  <section id="accueil">
-    <h2>Développeur Web</h2>
-    <p>Esprit Rock Lee : travail et persévérance.</p>
-    <a href="#projets">Voir mes projets</a>
-  </section>
+  <main>
 
-  <!-- ===== Section à propos ===== -->
-  <section id="apropos">
-    <img src="img/ryan.jpg" alt="Portrait de Ryan, développeur web">
-    <h2>À propos</h2>
-    <p>Moi c'est Ryan. Je me forme au développement web. J'aime coder des sites Web.</p>
-    <p>Télécharger mon CV</p>
-    <a href="#" download>Télécharger</a>
-  </section>
+    <section id="accueil">
+      <h1>Développeur Web</h1>
+      <p>Esprit Rock Lee : travail et persévérance.</p>
+      <a class="btn" href="#projets">Voir mes projets</a>
+    </section>
 
-  <!-- ===== Section projets ===== -->
-  <section id="projets">
-    <h2>Projets</h2>
+    <section id="apropos">
+      <img src="img/ryan.jpg" alt="Portrait de Ryan">
+      <div>
+        <h2>À propos</h2>
+        <p>Moi c’est Ryan. Je me forme au développement web. J’aime coder des sites Web.</p>
+        <a class="btn" href="cv-ryan.pdf" download>Télécharger mon CV</a>
+      </div>
+    </section>
 
-    <article>
-      <img src="img/Hokage.webp" alt="Capture d'écran du projet 1">
-      <h3>Projet 1</h3>
-      <a href="#">Voir le code sur GitHub</a>
-    </article>
+    <section id="projets">
+      <h2>Projets</h2>
+      <div class="projets">
+        <article>
+          <img src="img/Hokage.webp" alt="Projet 1">
+          <p>Projet 1</p>
+          <a href="https://github.com/ryan95380" target="_blank">
+            <img src="img/icone.png" alt="Lien GitHub projet 1">
+          </a>
+        </article>
+        <article>
+          <img src="img/Hokage.webp" alt="Projet 2">
+          <p>Projet 2</p>
+          <a href="https://github.com/ryan95380" target="_blank">
+            <img src="img/icone.png" alt="Lien GitHub projet 2">
+          </a>
+        </article>
+        <article>
+          <img src="img/Hokage.webp" alt="Projet 3">
+          <p>Projet 3</p>
+          <a href="https://github.com/ryan95380" target="_blank">
+            <img src="img/icone.png" alt="Lien GitHub projet 3">
+          </a>
+        </article>
+      </div>
+    </section>
 
-    <article>
-      <img src="img/Hokage.webp" alt="Capture d'écran du projet 2">
-      <h3>Projet 2</h3>
-      <a href="#">Voir le code sur GitHub</a>
-    </article>
+    <section id="competences">
+      <h2>Compétences</h2>
+      <div class="logos">
+        <img src="img/js.gif" alt="Logo JavaScript">
+        <img src="img/html.png" alt="Logo HTML5">
+        <img src="img/css.png" alt="Logo CSS3">
+        <img src="img/php.png" alt="Logo PHP">
+      </div>
+    </section>
 
-    <article>
-      <img src="img/Hokage.webp" alt="Capture d'écran du projet 3">
-      <h3>Projet 3</h3>
-      <a href="#">Voir le code sur GitHub</a>
-    </article>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Nom" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Votre message..." required></textarea>
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+    </section>
 
-  <!-- ===== Section compétences ===== -->
-  <section id="competences">
-    <h2>Compétences</h2>
-    <ul>
-      <li><img src="img/js.gif" alt="Logo JavaScript"> JavaScript</li>
-      <li><img src="img/html.png" alt="Logo HTML5"> HTML</li>
-      <li><img src="img/css.png" alt="Logo CSS3"> CSS</li>
-      <li><img src="img/php.png" alt="Logo PHP"> PHP</li>
-    </ul>
-  </section>
+  </main>
 
-  <!-- ===== Section contact ===== -->
-  <section id="contact">
-    <div class="contact-form">
-        <h2>Contactez-nous</h2>
-        <form id="contactForm">
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Envoyer</button>
-        </form>
-    </div>
-  </section>
-  
   <footer>
     <p>© 2025 Ryan Mambou</p>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
- <script src="script.js"></script>
+
 </body>
 </html>
-

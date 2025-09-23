@@ -1,15 +1,152 @@
-* {
-    background-image: url("/img/Rock-lee3440x1440_15.jpg");
-    color: #E8F3EF;
+/* ===== Base ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000 url("img/Rock-lee3440x1440_15.jpg") no-repeat center fixed;
+  background-size: cover;
+  color: #fff;
 }
 
-.accueil {
-display: none;
-display: flex;
-
+/* ===== Header ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f322c;
+  padding: 10px 20px;
 }
 
-article {
-    padding: 20px;
-    border-radius: 80px;
+.logo {
+  background: #24C36B;
+  color: #081d15;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ===== Sections ===== */
+section {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(26, 74, 66, 0.9);
+}
+
+#accueil { text-align: center; }
+
+#apropos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#apropos img {
+  width: 120px;
+  border-radius: 10px;
+}
+
+/* ===== Projets ===== */
+.projets {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.projets article {
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.projets img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* ===== Compétences ===== */
+.logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* ===== Formulaire ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* ===== Bouton ===== */
+.btn {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  background: #24C36B;
+  color: #081d15;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 700px) {
+  nav { display: none; }
+
+  #apropos {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .projets {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .projets article {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+    padding: 8px 10px;
+  }
+
+  .projets article > img {
+    width: 56px;
+    height: 56px;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+
+  .projets article a img { display: none; }
+
+  .projets article a::after {
+    content: " — GitHub";
+    font-size: 14px;
+    color: #fff;
+  }
+
+  .logos img { width: 50px; }
 }
