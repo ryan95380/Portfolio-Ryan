@@ -1,0 +1,15 @@
+* {
+    background-image: url("/img/Rock-lee3440x1440_15.jpg");
+    color: #E8F3EF;
+}
+
+.accueil {
+display: none;
+display: flex;
+
+}
+
+article {
+    padding: 20px;
+    border-radius: 80px;
+}
