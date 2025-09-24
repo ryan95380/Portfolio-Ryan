@@ -3,7 +3,9 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #24C36B url("img/Rock-lee3440x1440_15.jpg") no-repeat center fixed;
+  background:url("img/Rock-lee3440x1440_15.jpg") no-repeat center fixed;
+  background-color: rgb(0 0 0 / 50%);
+  background-blend-mode: color;
   background-size: cover;
   color: #fff;
 }
@@ -38,8 +40,9 @@ section {
   max-width: 900px;
   margin: 20px auto;
   padding: 20px;
-  border-radius: 10px;
-  background:rgb(255 255 255 / 8%)
+  border-radius: 15px;
+  background:rgb(255 255 255 / 8%);
+  drop
 }
 
 #accueil { text-align: center; }
@@ -67,16 +70,17 @@ section {
   width: 200px;
   padding: 10px;
   text-align: center;
-  border-radius: 10px;
-  background: rgb(255 255 255 / 8%)
+  border-radius: 12px;
+  background: rgb(255 255 255 / 8%);
+  margin: 15px;
 }
 
 .projets img {
   max-width: 100%;
-  border-radius: 5px;
+  border-radius: 12px;
 }
 .img-icon{
-  width: 40%;
+  width: 50%;
 
 }
 
@@ -87,7 +91,9 @@ section {
   justify-content: space-around;
   align-items: center;
 }
-
+.logos img{
+  width: 10%;
+}
 /* Le formulaire */
 form {
   display: flex;
@@ -109,6 +115,10 @@ input, textarea {
   text-decoration: none;
   color: #ffffff;
   border: 2px solid #24C36B;
+}
+
+.btn-form {
+  color: black;
 }
 
 footer {
