@@ -1,4 +1,5 @@
-/* ===== Base ===== */
+/* Base */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -7,7 +8,8 @@ body {
   color: #fff;
 }
 
-/* ===== Header ===== */
+/* header */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -30,7 +32,8 @@ nav a {
   text-decoration: none;
 }
 
-/* ===== Sections ===== */
+/* section */
+
 section {
   max-width: 900px;
   margin: 20px auto;
@@ -52,7 +55,7 @@ section {
   border-radius: 10px;
 }
 
-/* ===== Projets ===== */
+/* .projets */
 .projets {
   display: flex;
   justify-content: center;
@@ -73,14 +76,15 @@ section {
   border-radius: 5px;
 }
 
-/* ===== Compétences ===== */
+/* Le logo  */
+
 .logos {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-/* ===== Formulaire ===== */
+/* Le formulaire */
 form {
   display: flex;
   flex-direction: column;
@@ -93,7 +97,7 @@ input, textarea {
   border-radius: 5px;
 }
 
-/* ===== Bouton ===== */
+
 .btn {
   display: inline-block;
   padding: 10px;
@@ -103,13 +107,13 @@ input, textarea {
   color: #081d15;
 }
 
-/* ===== Footer ===== */
 footer {
   text-align: center;
   margin: 20px 0;
 }
 
-/* ===== Responsive ===== */
+/* responsive */
+
 @media (max-width: 700px) {
   nav { display: none; }
 
@@ -140,7 +144,9 @@ footer {
     object-fit: cover;
   }
 
-  .projets article a img { display: none; }
+  .projets article a img { 
+    display: none; 
+  }
 
   .projets article a::after {
     content: " — GitHub";
@@ -148,5 +154,7 @@ footer {
     color: #fff;
   }
 
-  .logos img { width: 50px; }
+  .logos img { 
+    width: 50px; 
+  }
 }
