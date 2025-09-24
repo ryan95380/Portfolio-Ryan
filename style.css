@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #000 url("img/Rock-lee3440x1440_15.jpg") no-repeat center fixed;
+  background: #24C36B url("img/Rock-lee3440x1440_15.jpg") no-repeat center fixed;
   background-size: cover;
   color: #fff;
 }
@@ -14,7 +14,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #0f322c;
+  background: rgb(255 255 255 / 8%);
   padding: 10px 20px;
 }
 
@@ -39,7 +39,7 @@ section {
   margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
-  background: rgba(26, 74, 66, 0.9);
+  background:rgb(255 255 255 / 8%)
 }
 
 #accueil { text-align: center; }
@@ -68,12 +68,16 @@ section {
   padding: 10px;
   text-align: center;
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgb(255 255 255 / 8%)
 }
 
 .projets img {
   max-width: 100%;
   border-radius: 5px;
+}
+.img-icon{
+  width: 40%;
+
 }
 
 /* Le logo  */
@@ -101,10 +105,10 @@ input, textarea {
 .btn {
   display: inline-block;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   text-decoration: none;
-  background: #24C36B;
-  color: #081d15;
+  color: #ffffff;
+  border: 2px solid #24C36B;
 }
 
 footer {
@@ -113,7 +117,6 @@ footer {
 }
 
 /* responsive */
-
 @media (max-width: 700px) {
   nav { display: none; }
 
