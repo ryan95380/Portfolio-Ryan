@@ -18,4 +18,4 @@ function Marquee(selector, speed) {
   });
 }
  
-window.addEventListener('load', Marquee('#marquee', 0.80))
+window.addEventListener('load', Marquee('#marquee', 0.30))

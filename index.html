@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio Ryan</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
 
@@ -32,14 +33,14 @@
       <div>
         <h2>À propos</h2>
         <p>Moi c'est Ryan. Je me forme au développement web. J'aime coder des sites Web.</p>
-        <a class="btn" href="cv-ryan.pdf" download>Télécharger mon CV</a>
+        <a class="btn" href="/img/Ryan.Mambou.pdf" download>Télécharger mon CV</a>
       </div>
     </section>
 
     <section id="projets">
       <h2>Projets</h2>
       <div class="projets">
-        <article>
+        <!-- <article>
           <img src="img/Hokage.webp" alt="Projet 1">
           <p>Projet 1</p>
           <a href="https://github.com/ryan95380" target="_blank">
@@ -59,7 +60,17 @@
           <a href="https://github.com/ryan95380" target="_blank">
             <img  class="img-icon" src="img/icone.png" alt="Lien GitHub projet 3">
           </a>
-        </article>
+        </article> -->
+          <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/Hokage.webp" alt="Projet 1"></div>
+        <div class="swiper-slide"><img src="img/Hokage.webp" alt="Projet 2"></div>
+        <div class="swiper-slide"><img src="img/Hokage.webp" alt="Projet 3"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
       </div>
     </section>
 
@@ -81,6 +92,7 @@
       <h2>Contact</h2>
       <form>
         <input type="text" placeholder="Nom" required>
+        <input type="text" placeholder="prénom" required>
         <input type="email" placeholder="Email" required>
         <textarea placeholder="Votre message..." required></textarea>
         <button type="submit" class="btn-form">Envoyer</button>
@@ -94,5 +106,27 @@
   </footer>
 
   <script src="script.js"></script>
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 </html>
+

@@ -1,5 +1,8 @@
 /* Base */
 
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -9,6 +12,13 @@ body {
   background-size: cover;
   color: #fff;
   font-size: 15px;
+}
+
+.contact {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 15px;
 }
 
 /* header */
@@ -89,8 +99,9 @@ section {
 }
 
 .projets img {
-  max-width: 90%;
+  max-width: 300px;
   border-radius: 13px;
+ margin-left: 20em;
 }
 .img-icon{
   width: 40%;
@@ -126,14 +137,21 @@ form {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  align-items: center;
+ 
 }
 
 input, textarea {
-  padding: 10px;
+  padding: 15px;
   border: none;
   border-radius: 5px;
+  max-width: 100em;
+  width: 430px;
 }
 
+textarea {
+  resize: none;
+}
 
 .btn {
   display: inline-block;
@@ -147,6 +165,7 @@ input, textarea {
 
 .btn-form {
   color: black;
+
 }
 
 footer {
@@ -204,4 +223,25 @@ footer {
   .logos img { 
     width: 50px; 
   }
+
 }
+
+  /* Slide */
+
+body {
+  position: relative;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+  .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+  
