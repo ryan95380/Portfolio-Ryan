@@ -40,37 +40,41 @@
     <section id="projets">
       <h2>Projets</h2>
       <div class="projets">
-        <!-- <article>
+
+        <!-- Ancienne version avec articles (gardée en commentaire)
+        <article>
           <img src="img/Hokage.webp" alt="Projet 1">
           <p>Projet 1</p>
           <a href="https://github.com/ryan95380" target="_blank">
             <img class="img-icon" src="img/icone.png" alt="Lien GitHub projet 1">
           </a>
         </article>
-        <article>
-          <img src="img/Hokage.webp" alt="Projet 2">
-          <p>Projet 2</p>
-          <a href="https://github.com/ryan95380" target="_blank">
-            <img  class="img-icon" src="img/icone.png" alt="Lien GitHub projet 2">
-          </a>
-        </article>
-        <article>
-          <img src="img/Hokage.webp" alt="Projet 3">
-          <p>Projet 3</p>
-          <a href="https://github.com/ryan95380" target="_blank">
-            <img  class="img-icon" src="img/icone.png" alt="Lien GitHub projet 3">
-          </a>
-        </article> -->
-          <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="/img/Hokage.webp" alt="Projet 1"></div>
-        <div class="swiper-slide"><img src="img/Hokage.webp" alt="Projet 2"></div>
-        <div class="swiper-slide"><img src="img/Hokage.webp" alt="Projet 3"></div>
+        -->
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="https://github.com/ryan95380/Projet_Boulangerie.git" target="_blank" rel="noopener">
+                <img src="/img/pain.png" alt="Projet 1">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://github.com/ryan95380" target="_blank" rel="noopener">
+                <img src="img/Hokage.webp" alt="Projet 2">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://github.com/ryan95380" target="_blank" rel="noopener">
+                <img src="img/Hokage.webp" alt="Projet 3">
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
+
       </div>
     </section>
 
@@ -92,7 +96,7 @@
       <h2>Contact</h2>
       <form>
         <input type="text" placeholder="Nom" required>
-        <input type="text" placeholder="prénom" required>
+        <input type="text" placeholder="Prénom" required>
         <input type="email" placeholder="Email" required>
         <textarea placeholder="Votre message..." required></textarea>
         <button type="submit" class="btn-form">Envoyer</button>
@@ -106,7 +110,7 @@
   </footer>
 
   <script src="script.js"></script>
-    <!-- Swiper JS -->
+  <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
@@ -114,19 +118,10 @@
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 30,
-      keyboard: {
-        enabled: true,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+      keyboard: { enabled: true },
+      pagination: { el: ".swiper-pagination", clickable: true },
+      navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }
     });
   </script>
 </body>
 </html>
-
