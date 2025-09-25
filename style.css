@@ -37,7 +37,7 @@ nav a {
   text-decoration: none;
   font-size: 19px;
   border: 2px solid #24C36B;
-  background: rgba(0, 0, 0, 0.361);
+  background: rgba(0, 0, 0, 0.226);
   padding: 20px 25px;
   border-radius: 10px;
   padding: 8px;
@@ -142,6 +142,7 @@ input, textarea {
   text-decoration: none;
   color: #ffffff;
   border: 2px solid #24C36B;
+  background: rgba(0, 0, 0, 0.226);
 }
 
 .btn-form {
@@ -171,7 +172,7 @@ footer {
   .projets {
     /* flex-direction: column;
     align-items: flex-start; */
-    /* gap: 12px; */
+    gap: 12px;
   }
 
   .projets article {
