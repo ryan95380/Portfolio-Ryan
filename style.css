@@ -8,6 +8,7 @@ body {
   background-blend-mode: color;
   background-size: cover;
   color: #fff;
+  font-size: 15px;
 }
 
 /* header */
@@ -17,14 +18,15 @@ header {
   justify-content: space-between;
   align-items: center;
   background: rgb(255 255 255 / 8%);
-  padding: 10px 20px;
+  padding: 20px 25px;
   cursor: pointer;
 }
+
 
 .logo {
   background: #24C36B;
   color: #081d15;
-  padding: 5px 10px;
+  padding: 10px 15px;
   border-radius: 5px;
   font-weight: bold;
 }
@@ -33,14 +35,20 @@ nav a {
   margin-left: 15px;
   color: #fff;
   text-decoration: none;
+  font-size: 19px;
+  border: 2px solid #24C36B;
+  background: rgba(0, 0, 0, 0.361);
+  padding: 20px 25px;
+  border-radius: 10px;
+  padding: 8px;
 }
 
 /* section */
 
 section {
-  max-width: 900px;
+  max-width: 920px;
   margin: 20px auto;
-  padding: 20px;
+  padding: 15px;
   border-radius: 15px;
   background:rgb(255 255 255 / 8%);
   
@@ -73,17 +81,21 @@ section {
   width: 200px;
   padding: 10px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 12px;
   background: rgb(255 255 255 / 8%);
   margin: 15px;
+  height: 13em;
+
 }
 
 .projets img {
-  max-width: 100%;
-  border-radius: 10px;
+  max-width: 90%;
+  border-radius: 13px;
 }
 .img-icon{
-  width: 50%;
+  width: 40%;
+  position: relative;
+  top: -19px;
 
 }
 
@@ -96,6 +108,8 @@ section {
 #marquee {
   display: flex;
   overflow: hidden;
+  width: 50%;
+  margin: auto;
 }
 
 .logos {
@@ -137,31 +151,36 @@ input, textarea {
 footer {
   text-align: center;
   margin: 20px 0;
+  padding: 25px 20px;
   cursor: pointer;
+  font-size: 18px;
 }
 
 /* responsive */
 @media (max-width: 700px) {
   nav { display: none; }
 
+  body {
+    font-size: 12px;
+  }
   #apropos {
     flex-direction: column;
     text-align: center;
   }
 
   .projets {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+    /* flex-direction: column;
+    align-items: flex-start; */
+    /* gap: 12px; */
   }
 
   .projets article {
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     gap: 10px;
     width: 100%;
-    text-align: left;
-    padding: 8px 10px;
+    /* text-align: left; */
+    padding: 8px 1px;
   }
 
   .projets article > img {
