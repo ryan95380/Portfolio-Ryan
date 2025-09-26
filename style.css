@@ -97,12 +97,12 @@ section {
 /* Slide (Carrousel) */
 
 .liens {
-  width: 50%;
+  width: 100%;
   text-align: center;
-  margin-right: 30px;
   border-radius: 30px;
   object-fit: cover;
-  border: 3px solid #24C36B;;
+
+  margin: 15px;
 }
 .swiper { 
   width: 100%; 
@@ -145,7 +145,7 @@ section {
   height: auto;
   object-fit: cover;
   border-radius: 20px;
-   border: 3px solid #24c36c7e;
+  border: 3px solid #24c36c7e;
 }
 
 /* Compétences */
@@ -313,14 +313,14 @@ footer {
     max-width: 200px;
     width: 100%;
     height: auto;
+    margin-right: 40px;
   }
 
 .liens {
   width: 100%;
   text-align: center;
   display: flex;
-  margin-left: 20px;
-  scale: 80%;
+  margin-right: 37px;
 }
 .swiper-slide{
   flex-direction: column;
