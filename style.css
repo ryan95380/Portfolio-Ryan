@@ -63,7 +63,7 @@ section {
 
 #accueil { 
   text-align: center;
- }
+}
 
 #apropos {
   display: flex;
@@ -95,19 +95,18 @@ section {
 }
 
 /* Slide (Carrousel) */
-
 .liens {
   width: 100%;
   text-align: center;
   border-radius: 30px;
   object-fit: cover;
-
   margin: 15px;
 }
+
 .swiper { 
   width: 100%; 
   height: 100%;
- }
+}
 
 .projets .swiper {
   display: flex;
@@ -120,9 +119,11 @@ section {
   padding: 5px;
   border-radius: 10px;
 }
-.swiper-slide{
+
+.swiper-slide {
   flex-direction: column;
 }
+
 .projets .swiper-slide {
   display: flex;
   justify-content: center;
@@ -131,9 +132,9 @@ section {
   margin-top: 10px;
 }
 
-.swiper-button-next:after,.swiper-button-prev:after {
+.swiper-button-next:after,
+.swiper-button-prev:after {
   color: #fff;
-
 }
 
 /* Images carrousel */
@@ -190,6 +191,7 @@ input, textarea {
 textarea { 
   resize: none; 
 }
+
 a {
   color: #fff;
 }
@@ -245,7 +247,7 @@ footer {
   }
   .logo { 
     padding: 8px 12px;
-   }
+  }
 
   /* Accueil */
   #accueil h1 {
@@ -265,18 +267,24 @@ footer {
     border-radius: 10px;
   }
 
-  /* Formulaire */
+  /* Formulaire responsive */
   form { 
     gap: 10px;
-   }
+    width: 100%;
+  }
+
   input, textarea {
     width: 100%;
     max-width: none;
-    margin: 5px;
+    margin: 0;
+    padding: 12px;
+    box-sizing: border-box;
   }
+
   .btn, .btn-form {
     width: 100%;
     text-align: center;
+    margin-top: 8px;
   }
 
   /* Projets (hors swiper) */
@@ -291,19 +299,16 @@ footer {
   }
 
   /* compétence */
-
   #competences {
-  font-size: 18px;
-  
-}
+    font-size: 18px;
+  }
 
-#marquee {
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-  margin: auto;
-}
-
+  #marquee {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+  }
 
   /* Carrousel */
   .projets .swiper { 
@@ -316,13 +321,13 @@ footer {
     margin-right: 40px;
   }
 
-.liens {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  margin-right: 37px;
-}
-.swiper-slide{
-  flex-direction: column;
-}
+  .liens {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin-right: 37px;
+  }
+  .swiper-slide {
+    flex-direction: column;
+  }
 }
