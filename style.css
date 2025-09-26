@@ -297,6 +297,12 @@ footer {
     height: 64px;
   }
 
+  P {
+   text-align: center;
+   margin-right: 15px;
+}
+
+
   /* compétence */
   #competences {
     font-size: 18px;
@@ -317,7 +323,7 @@ footer {
     max-width: 200px;
     width: 100%;
     height: auto;
-    margin-right: 40px;
+    margin-right: 46px;
   }
 
   .liens {
