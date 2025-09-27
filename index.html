@@ -18,72 +18,78 @@
       <a href="#competences">Compétences</a>
       <a href="#contact">Contact</a>
     </nav>
-    <div class="menu-toggle" id="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
   </header>
 
   <main>
 
-    <!-- Accueil -->
     <section id="accueil">
       <h1>Développeur Web</h1>
       <p>Esprit Rock Lee : travail et persévérance.</p>
       <a class="btn" href="#projets">Voir mes projets</a>
     </section>
 
-    <!-- À propos -->
     <section id="apropos">
       <img src="img/ryan.jpg" alt="Portrait de Ryan">
       <div>
         <h2>À propos</h2>
         <p>Moi c'est Ryan. Je me forme au développement web. J'aime coder des sites Web.</p>
-        <a class="btn" href="img/Ryan.Mambou.pdf" download>Télécharger mon CV</a>
+        <a class="btn" href="/img/Ryan.Mambou.pdf" download>Télécharger mon CV</a>
       </div>
     </section>
 
-    <!-- Projets -->
     <section id="projets">
       <h2>Projets</h2>
       <div class="projets">
+        <!-- sans le carouselle
+        <article>
+          <img src="img/Hokage.webp" alt="Projet 1">
+          <p>Projet 1</p>
+          <a href="https://github.com/ryan95380" target="_blank">
+            <img class="img-icon" src="img/icone.png" alt="Lien GitHub projet 1">
+          </a>
+        </article>
+        -->
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-
-            <!-- Projet boulangerie -->
-            <div class="swiper-slide">
-              <div class="liens">
-                <p>J'ai développé un projet boulangerie clair et organisé dans le cadre de mon travail. Cliquez pour voir le projet.</p>
-              </div>
+            <div class="swiper-slide" >
+              <div class ="liens"><p>J'ai développé un projet boulangerie clair et organisé dans le cadre de mon travail. Cliquez pour voir le projet.</p></div>
               <a href="https://github.com/ryan95380/Projet_Boulangerie.git" target="_blank" rel="noopener">
                 <img src="img/boulangerie.png" alt="Lien GitHub projet boulangerie">
-                <p>Lien GitHub projet boulangerie</p>
+                <p>https://github.com/ryan95380/Projet_Boulangerie.git</p>
               </a>
             </div>
-
-            <!-- Projet météo -->
             <div class="swiper-slide">
-              <div class="liens">
-                <p>J'ai développé un projet météo complet et fonctionnel dans le cadre de mon travail. Cliquez pour voir le projet.</p>
-              </div>
-              <a href="https://github.com/ryan95380/Projet_Meteo.git" target="_blank" rel="noopener">
-                <img src="img/météo.png" alt="Lien GitHub projet météo">
-                <p>Lien GitHub projet météo</p>
+              <div class ="liens"><p>J'ai développé un projet météo complet et fonctionnel dans le cadre de mon travail. Cliquez pour voir le projet.</p></div>
+              <a href="https://github.com/ryan95380/Projet_M-t-o.git" target="_blank" rel="noopener">
+                <img src="img/météo.png" alt="Lien Github projet météo">
+                <p>https://github.com/ryan95380/Projet_Meteo.git</p>
               </a>
             </div>
-
+            <div class="swiper-slide">
+              <a href="https://github.com/ryan95380" target="_blank" rel="noopener">
+                <img src="img/Hokage.webp" alt="Projet 3">
+              </a>
+            </div>
+             <div class="swiper-slide">
+              <a href="https://github.com/ryan95380" target="_blank" rel="noopener">
+                <img src="img/Hokage.webp" alt="Projet 3">
+              </a>
+            </div>
+             <div class="swiper-slide">
+              <a href="https://github.com/ryan95380" target="_blank" rel="noopener">
+                <img src="img/Hokage.webp" alt="Projet 3">
+              </a>
+            </div>
           </div>
 
-          <!-- Controls -->
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
+
       </div>
     </section>
 
-    <!-- Compétences -->
     <section id="competences">
       <h2>Compétences</h2>
       <div id="marquee">
@@ -92,13 +98,12 @@
           <img src="img/Html.gif" alt="Logo HTML5">
           <img src="img/Css.gif" alt="Logo CSS3">
           <img src="img/php.png" alt="Logo PHP">
-          <img src="img/Boostrap.png" alt="Logo Bootstrap">
+          <img src="img/Boostrap.png" alt="Logo Boostrap">
           <img src="img/Figma.png" alt="Logo Figma">
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact">
       <h2>Contact</h2>
       <form>
@@ -112,15 +117,15 @@
 
   </main>
 
-  <!-- Footer -->
   <footer>
     <p>© 2025 Ryan Mambou</p>
   </footer>
 
   <script src="script.js"></script>
+  <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Swiper init -->
+  <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
