@@ -16,13 +16,6 @@ body {
   height: 100%;
 }
 
-.contact {
-  max-width: 500px;
-  margin: 20px auto;
-  padding: 15px;
-  border-radius: 15px;
-}
-
 /* Header */
 header {
   display: flex;
@@ -55,20 +48,25 @@ nav a {
 /* Sections */
 section {
   max-width: 920px;
-  margin: 20px auto;
-  padding: 15px;
-  border-radius: 15px;
+  margin: 28px auto;
+  padding: 22px;
+  border-radius: 16px;
   background: rgb(255 255 255 / 8%);
+  scroll-margin-top: 84px;
 }
 
-#accueil { 
+section > h2 {
+  margin: 0 0 14px;
+}
+
+#accueil {
   text-align: center;
 }
 
 #apropos {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 22px;
 }
 
 #apropos img {
@@ -81,55 +79,43 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 22px;
 }
 
-.projets article {
-  width: 200px;
-  padding: 10px;
-  text-align: center;
-  border-radius: 12px;
-  background: rgb(255 255 255 / 8%);
-  margin: 15px;
-  height: 13em;
-}
-
-/* Slide (Carrousel) */
 .liens {
   width: 100%;
   text-align: center;
-  border-radius: 30px;
-  object-fit: cover;
-  margin: 15px;
+  margin: 10px 0 12px;
 }
 
-.swiper { 
-  width: 100%; 
-  height: 100%;
+.liens p {
+  margin: 0;
+  text-align: center;
 }
 
 .projets .swiper {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 350px;
+  min-height: 360px;
   text-align: center;
   border: 3px solid #24c36c7e;
   background: rgba(0, 0, 0, 0.226);
-  padding: 5px;
-  border-radius: 10px;
+  padding: 14px;
+  border-radius: 12px;
 }
 
 .swiper-slide {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.projets .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  margin-top: 10px;
+.projets .swiper-button-next,
+.projets .swiper-button-prev {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .swiper-button-next:after,
@@ -140,17 +126,23 @@ section {
 /* Images carrousel */
 .projets .swiper-slide img {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 10px;
   max-width: 350px;
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 20px;
   border: 3px solid #24c36c7e;
 }
 
+.swiper-slide a p {
+  word-break: break-word;
+  text-align: center;
+  margin: 8px 0 0;
+}
+
 /* Compétences */
-#competences { 
+#competences {
   overflow: hidden;
 }
 
@@ -168,171 +160,199 @@ section {
   gap: 9px;
 }
 
-.logos img { 
-  width: 5em; 
+.logos img {
+  width: 5em;
 }
 
 /* Formulaire */
 form {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   align-items: center;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 15px;
   border: none;
   border-radius: 5px;
-  max-width: 100em;
   width: 430px;
+  max-width: 100%;
 }
 
-textarea { 
-  resize: none; 
+textarea {
+  resize: none;
 }
 
 a {
   color: #fff;
 }
 
-.btn {
-  padding: 5px;
-  border-radius: 10px;
-  text-decoration: none;
-  color: #ffffff;
-  border: 2px solid #24C36B;
-  background: rgba(0, 0, 0, 0.226);
-}
-
+.btn,
 .btn-form {
+  padding: 6px 10px;
+  border-radius: 10px;
   color: #ffffff;
   border: 2px solid #24C36B;
   background: rgba(0, 0, 0, 0.226);
-  padding: 5px;
-  border-radius: 10px;
+  text-decoration: none;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  margin: 20px 0;
+  margin: 24px 0;
   padding: 25px 20px;
-  cursor: pointer;
   font-size: 18px;
 }
 
 /* Responsive */
 @media (max-width: 700px) {
-  nav { 
-    display: none; 
+  nav {
+    display: none;
   }
 
-  body { 
-    font-size: 12px; 
-  }
-
-  /* Sections compactes */
   section {
     max-width: 95%;
-    margin: 12px auto;
-    padding: 12px;
-    border-radius: 12px;
+    margin: 28px auto;
+    padding: 24px;
+    border-radius: 14px;
   }
 
-  /* Header réduit */
-  header { 
-    padding: 12px 14px; 
+  header {
+    padding: 12px 14px;
   }
-  .logo { 
+
+  .logo {
     padding: 8px 12px;
   }
 
-  /* Accueil */
   #accueil h1 {
     font-size: 22px;
-    margin: 0 0 6px;
+    margin: 0 0 12px;
   }
 
-  /* À propos */
   #apropos {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 12px;
+    gap: 16px;
   }
+
   #apropos img {
     width: 90px;
-    border-radius: 10px;
   }
 
-  /* Formulaire responsive */
-  form { 
-    gap: 10px;
+  form {
+    gap: 16px;
     width: 100%;
   }
 
-  input, textarea {
+  input,
+  textarea {
     width: 100%;
-    max-width: none;
     margin: 0;
     padding: 12px;
     box-sizing: border-box;
   }
 
-  .btn, .btn-form {
+  .btn,
+  .btn-form {
     width: 100%;
     text-align: center;
     margin-top: 8px;
   }
 
-  /* Projets (hors swiper) */
-  .projets article {
-    width: 100%;
-    padding: 10px;
-  }
-  .projets article > img {
-    margin: 0 auto;
-    width: 64px;
-    height: 64px;
+  .projets .swiper {
+    min-height: 280px;
+    padding: 16px;
   }
 
-  P {
-   text-align: center;
-   margin-right: 15px;
-}
-
-
-  /* compétence */
-  #competences {
-    font-size: 18px;
-  }
-
-  #marquee {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    margin: auto;
-  }
-
-  /* Carrousel */
-  .projets .swiper { 
-    min-height: 240px; 
-  }
   .projets .swiper-slide img {
-    max-width: 200px;
-    width: 100%;
-    height: auto;
-    margin-right: 46px;
+    max-width: 240px;
   }
 
   .liens {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    margin-right: 37px;
+    margin: 4px 0 12px;
   }
-  .swiper-slide {
+}
+
+/* Bouton menu mobile */
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .menu-toggle {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: fixed;
+    top: 12px;
+    right: 14px;
+    z-index: 1000;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    border: 2px solid #24C36B;
+    background: rgba(0, 0, 0, 0.26);
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #fff;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  header nav.is-open {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    left: 10px;
+    max-height: 70vh;
+    overflow-y: auto;
+    z-index: 999;
+    padding: 16px;
+    border-radius: 12px;
+    background: rgb(255 255 255 / 8%);
+    backdrop-filter: blur(6px);
+    border: 2px solid #24c36c7e;
+  }
+
+  header nav.is-open a {
+    display: block;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  header nav.is-open a:last-child {
+    border-bottom: none;
+  }
+
+  .menu-open .menu-toggle span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .menu-open .menu-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-open .menu-toggle span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .menu-open {
+    overflow: hidden;
   }
 }
